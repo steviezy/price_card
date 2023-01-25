@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    color: white;
+
+}
+
+.panel {
+    height: 500px;
+    width: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+.caption {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+.icon {
+    height: 1em;
+    width: 1em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: none;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#title {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    height: 1em;
+}
+
+#name {
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 1.8em;
+
+}
+
+#description {
+    color: hsl(228, 12%, 48%);
+}
+
+#sale {
+    color: green;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 2em;
+}
+
+#original {
+    text-decoration: line-through;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+#cart {
+    font-size: 20px;
+}
+
+@media (min-width: 680px) {
+
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .panel {
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+    img {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+}
