@@ -111,7 +111,7 @@ button {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
 
     .panel {
         border-bottom-left-radius: 15px;
